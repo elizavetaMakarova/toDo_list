@@ -14,10 +14,11 @@ import java.io.*;
  *
  * @author Elizaveta Makarova
  * @version 1.0
+ * This is class which visualize the main menu of the program 
  */
 public class Menu extends JFrame
 {
-    // instance variables - replace the example below with your own
+    
     private JButton addNewItem, showItems, exit;
     private File myFile;
     private JPanel gLay,sLay;
@@ -35,8 +36,8 @@ public class Menu extends JFrame
         setSize(600, 200);
         setLayout(new BoxLayout(getContentPane(),BoxLayout.X_AXIS));
         gLay = new JPanel();
-        gLay.setLayout(new GridLayout(3,1));
         sLay = new JPanel();
+        gLay.setLayout(new GridLayout(3,1));
         note = new JTextArea("Press Add new Item to creat new item in your toDo list"+
         "\n"+"\n"+"Press Show Items to see your toDo list"+
         "\n"+"\n"+"Press Exit to close the program");
@@ -68,9 +69,9 @@ public class Menu extends JFrame
           try {
             Visual v= new Visual();
             
-        }
+            }
        catch(Exception ex) {
-         //  Block of code to handle errors
+         JOptionPane.showMessageDialog(null,"Something is wrong");
           }
            
       }
@@ -80,10 +81,10 @@ public class Menu extends JFrame
             VisualList vl= new VisualList();
         }
        catch(Exception ex) {
-         //  Block of code to handle errors
+         JOptionPane.showMessageDialog(null,"Something is wrong");
           }
           
       }
      }
-    }
+   }
 }

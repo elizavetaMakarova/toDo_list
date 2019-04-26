@@ -14,10 +14,11 @@ import java.util.Scanner;
  *
  * @author Elizaveta Makarova
  * @version 1.0
+ * This class visualize the deleting of Item 
  */
 public class VisualList extends JFrame
 {
-    // instance variables - replace the example below with your own
+    
     private JList list = new JList();
     private DefaultListModel listModel = new DefaultListModel();
     private JButton markDone;
@@ -33,6 +34,8 @@ public class VisualList extends JFrame
         Scanner scan = null;
 
         scan = new Scanner(file);
+       
+          //Reading the file 
 
         while (scan.hasNextLine()) {
            String line = scan.nextLine();
@@ -43,7 +46,7 @@ public class VisualList extends JFrame
              listModel.addElement(s);
          }
  
-    }
+        }
     
        list = new JList(listModel);
        markDone = new JButton("Mark as done");

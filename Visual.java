@@ -14,6 +14,7 @@ import java.io.*;
  *
  * @author Elizaveta Makarova
  * @version 1.0
+ * This class visualize the adding the Item 
  */
 public class Visual extends JFrame
 {

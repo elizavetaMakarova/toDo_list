@@ -5,6 +5,7 @@ import java.io.*;
  *
  * @author Elizaveta Makarova
  * @version 1.0
+ * This is a main class 
  */
 public class Main 
 {
@@ -15,8 +16,6 @@ public class Main
         
         Menu m= new Menu();
         
-        //BufferedWriter output = new BufferedWriter(new FileWriter(myFile));
         
-        //output.close();
     }
 }
